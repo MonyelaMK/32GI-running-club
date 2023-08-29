@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32 GI Sports Nutrition</title>
+    <link rel="stylesheet" href="/assets/CSS/utilities.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/CSS/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="nav" id="nav">
+        <div class="logo">
+            <a href="/index.html"><img src="/assets/Images/Logo.webp" alt="Logo"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="product.html" class="current">Special</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="cart">
+            <ul>
+                <li>
+                    <a href="cart.html" class="icons-link">
+                        <span class="nav-icon">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <b class="quantity js-cart-quantity">0</b>
+                        </span>
+                        <span class="nav-text js-cart-quantity">Cart
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="icons-link">
+                        <span class="nav-icon"><i class="fa-solid fa-phone"></i></span>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" class="icons-link">
+                        <span class="nav-icon"><i class="fa-solid fa-user"></i></span>
+                        <span class="nav-text">Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="sidebar">
+            <div class="select-btn">
+                <span class="btn-text">Shop By Category</span>
+                <span class="arrow-dwn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+            <ul class="list-items">
+                <li class="item" data-filter="all">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">All</span>
+                </li>
+                <li class="item" data-filter="special">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">Special</span>
+                </li>
+                <li class="item" data-filter="bottle">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">Bottle</span>
+                </li>
+                <li class="item" data-filter="shirt">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">shirt</span>
+                </li>
+                <li class="item" data-filter="shoe">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">shoe</span>
+                </li>
+                <li class="item" data-filter="powder">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">powder</span>
+                </li>
+                <li class="item" data-filter="watch">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">watch</span>
+                </li>
+                <li class="item" data-filter="trouser">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">Trousers</span>
+                </li>
+            </ul>
+        </div>
+        <div class="right-bar">
+            <div class="product-header">
+                <div class="search-bar-container active">
+                    <img src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/magnifier-512.png"
+                        alt="magnifier" class="magnifier" />
+                    <form action="" onsubmit="return false">
+                        <input type="text" class="input" id="search" placeholder="Search ..." />
+                    </form>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png"
+                        alt="mic-icon" class="mic-icon" />
+                </div>
+                <div>
+                    <h1>Products</h1>
+                </div>
+            </div>
+            <div class="gallery js-product-grid">
+                <!-- <div class="main">
+                <div class="products-grid js-product-grid">
+                </div>
+            </div> -->
+                <!-- <div class="gallery js-product-grid">
+                <div class="content">
+                    <div class="image">
+                        <img src="/assets/Images/32Gi_Rapid_Energy_Render_Rasp-01_1080x1080_bd076414-8d4d-4974-8e31-19b84066b838.webp"
+                            alt="">
+                    </div>
+                    <h3>Product Name</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <h6>R200</h6>
+                    <button class="primary-btn top-btn">View Product</button>
+                    <button class="secondary-btn p-btn">Add to Cart</button>
+                </div>
+                <div class="content">
+                    <div class="image">
+                        <img src="/assets/images/products/bottle-1.jpg" alt="">
+                    </div>
+                    <h3>Product Name</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <h6>R200</h6>
+                    <button class="primary-btn top-btn">View Product</button>
+                    <button class="secondary-btn p-btn">Add to Cart</button>
+                </div>
+                <div class="content">
+                    <div class="image">
+                        <img src="/assets/Images/1_7a193b48-0d87-49ee-9dfc-e1fe1d2eb0a9.webp" alt="">
+                    </div>
+                    <h3>Product Name</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star "></i></li>
+                        <li><i class="fa fa-star "></i></li>
+                        <li><i class="fa fa-star "></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <h6>R200</h6>
+                    <button class="primary-btn top-btn">View Product</button>
+                    <button class="secondary-btn p-btn">Add to Cart</button>
+                </div>
+                <div class="content">
+                    <div class="image">
+                        <img src="/assets/images/products/trouser-3.jpg" alt="">
+                    </div>
+                    <h3>Product Name</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                    </ul>
+                    <h6>R200</h6>
+                    <button class="primary-btn top-btn">View Product</button>
+                    <button class="secondary-btn p-btn">Add to Cart</button>
+                </div>
+                <div class="content">
+                    <div class="image">
+                        <img src="/assets/Images/32Gi_Rapid_Energy_Render_Rasp-01_1080x1080_bd076414-8d4d-4974-8e31-19b84066b838.webp"
+                            alt="">
+                    </div>
+                    <h3>Product Name</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <h6>R200</h6>
+                    <button class="primary-btn top-btn">View Product</button>
+                    <button class="secondary-btn p-btn">Add to Cart</button>
+                </div>
+                <div class="content">
+                    <div class="image">
+                        <img src="/assets/images/products/watch-4.jpg" alt="">
+                    </div>
+                    <h3>Product Name</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <h6>R200</h6>
+                    <button class="primary-btn top-btn">View Product</button>
+                    <button class="secondary-btn p-btn">Add to Cart</button>
+                </div>
+                <div class="content">
+                    <div class="image">
+                        <img src="/assets/Images/1_7a193b48-0d87-49ee-9dfc-e1fe1d2eb0a9.webp" alt="">
+                    </div>
+                    <h3>Product Name</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <h6>R200</h6>
+                    <button class="primary-btn top-btn">View Product</button>
+                    <button class="secondary-btn p-btn">Add to Cart</button>
+                </div>
+                <div class="content">
+                    <div class="image">
+                        <img src="/assets/Images/RetroBerry-012048x2048.webp" alt="">
+                    </div>
+                    <h3>Product Name</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <h6>R200</h6>
+                    <button class="primary-btn top-btn">View Product</button>
+                    <button class="secondary-btn p-btn">Add to Cart</button>
+                </div>
+            </div> -->
+            </div>
+    </section>
+    <footer>
+        <div class="top">
+            <div class="left-div">
+                <div class="top-div">
+                    <h3>Unit 9, Eastborough Business Park, 15 Olympia Street, Eastgate Ext, Marlboro, Johannesburg, 2090
+                    </h3>
+                    <h2>RSA 086 132 0000 | info@32gi.com</h2>
+                    <h6>Mon-Fri 8am-4pm CAT</h6>
+                </div>
+                <div class="bot-div">
+                    <p>
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-twitter"></i>
+                        Twitter
+                    </p>
+                </div>
+            </div>
+            <div class="right-div">
+                <div class="div-left">
+                    <ul>
+                        <li>
+                            <h3>Collection</h3>
+                        </li>
+                        <li>Race</li>
+                        <li>Recover</li>
+                        <li>Endure</li>
+                        <li>Hydration</li>
+                        <li>Pre-Training</li>
+                    </ul>
+                </div>
+                <div class="div-mid">
+                    <ul>
+                        <li>
+                            <h3>Information</h3>
+                        </li>
+                        <li>Privacy Policy
+                        </li>
+                        <li>Shipping & Return Policy
+                        </li>
+                        <li>Website Terms & Conditions
+                        </li>
+                        <li>Contact Us
+                        </li>
+                        <li>Discounts & Coupon T's & C's</li>
+                    </ul>
+                </div>
+                <div class="div-right">
+                    <ul>
+                        <li>
+                            <h3>Other Pages</h3>
+                        </li>
+                        <li>Protein Press Release
+                        </li>
+                        <li>Running Club</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &copy; 2023 Powered by 32Gi® Sports Nutrition Website designed by Kamo</p>
+        </div>
+    </footer>
+    <!-- <script src="/assets/script/index.js"></script> -->
+    <script src="/assets/script/products.js"></script>
+</body>
+
+</html>

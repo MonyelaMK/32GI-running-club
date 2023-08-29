@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="/assets/CSS/style.css">
+    <link rel="stylesheet" href="/assets/CSS/contact.css">
+    <link rel="stylesheet" href="/assets/CSS/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="nav" id="nav">
+        <div class="logo">
+            <a href="/index.html"><img src="/assets/Images/Logo.webp" alt="Logo"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="products.html">Special</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="cart">
+            <ul>
+                <li>
+                    <a href="cart.html" class="icons-link">
+                        <span class="nav-icon">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <b class="quantity js-cart-quantity">0</b>
+                        </span>
+                        <span class="nav-text js-cart-quantity">Cart
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="icons-link">
+                        <span class="nav-icon"><i class="fa-solid fa-phone"></i></span>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icons-link">
+                        <span class="nav-icon"><i class="fa-solid fa-user"></i></span>
+                        <span class="nav-text">Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contact">
+        <!-- Contact -->
+        <!-- <section id="contact" class="contact flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1 team">
+                        <img src="/assets/Images/contact.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-light">
+                        <h2>Contact <span>Us</span></h2>
+                        <form action="process.php" method="POST" class="callback-form">
+                            <div class="form-control">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter email">
+                            </div>
+                            <div class="form-control">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" phone="phone" id="phone" placeholder="Enter phone">
+                            </div>
+                            <div class="form-control">
+                                <label for="message">Message Number</label>
+                                <textarea name="message" id="message" placeholder="Enter the message here"></textarea>
+                            </div>
+                            <input type="submit" value="Send" id="submit" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Alert Messages -->
+        <!-- <div class="alert-success">
+            <span>Message Sent! Thank you for contacting us</span>
+        </div>
+        <div class="alert-error">
+            <span>Something went wrong! Please try again.</span>
+        </div> -->
+        <!-- Contact Section Start -->
+        <div class="contact-section">
+            <div class="contact-info">
+                <div><i class="fa-solid fa-location-dot"></i>Address, City, Country</div>
+                <div><i class="fa-solid fa-envelope"></i>conact@email.com</div>
+                <div><i class="fa-solid fa-phone"></i>+27 71 016 1880</div>
+                <div><i class="fa-solid fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="" class="" method="post">
+                    <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                    <input type="text" phone="phone" class="text-box" placeholder="Your phone" required>
+                    <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <input type="submit" name="submit" value="Send" class="send-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="top">
+            <div class="left-div">
+                <div class="top-div">
+                    <h3>Unit 9, Eastborough Business Park, 15 Olympia Street, Eastgate Ext, Marlboro, Johannesburg, 2090
+                    </h3>
+                    <h2>RSA 086 132 0000 | info@32gi.com</h2>
+                    <h4>Mon-Fri 8am-4pm CAT</h4>
+                </div>
+                <div class="bot-div">
+                    <p>
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-twitter"></i>
+                        Twitter
+                    </p>
+                </div>
+            </div>
+            <div class="right-div">
+                <div class="div-left">
+                    <ul>
+                        <li>
+                            <h3>Collection</h3>
+                        </li>
+                        <li>Race</li>
+                        <li>Recover</li>
+                        <li>Endure</li>
+                        <li>Hydration</li>
+                        <li>Pre-Training</li>
+                    </ul>
+                </div>
+                <div class="div-mid">
+                    <ul>
+                        <li>
+                            <h3>Information</h3>
+                        </li>
+                        <li>Privacy Policy
+                        </li>
+                        <li>Shipping & Return Policy
+                        </li>
+                        <li>Website Terms & Conditions
+                        </li>
+                        <li>Contact Us
+                        </li>
+                        <li>Discounts & Coupon T's & C's</li>
+                    </ul>
+                </div>
+                <div class="div-right">
+                    <ul>
+                        <li>
+                            <h3>Other Pages</h3>
+                        </li>
+                        <li>Protein Press Release
+                        </li>
+                        <li>Running Club</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &copy; 2023 Powered by 32Gi® Sports Nutrition Website designed by Kamo</p>
+        </div>
+    </footer>
+    <script src="script/index.js"></script>
+</body>
+
+</html>
