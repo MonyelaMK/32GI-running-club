@@ -17,44 +17,50 @@
 </head>
 
 <body>
-    <nav class="nav" id="nav">
-        <div class="logo">
-            <a href="/index.html"><img src="/assets/Images/Logo.webp" alt="Logo"></a>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="products.html">Special</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </div>
-        <div class="cart">
-            <ul>
-                <li>
-                    <a href="cart.html" class="icons-link">
-                        <span class="nav-icon">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            <b class="quantity js-cart-quantity">0</b>
-                        </span>
-                        <span class="nav-text js-cart-quantity">Cart
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html" class="icons-link">
-                        <span class="nav-icon"><i class="fa-solid fa-phone"></i></span>
-                        <span class="nav-text">Contact</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="login.html" class="icons-link">
-                        <span class="nav-icon"><i class="fa-solid fa-user"></i></span>
-                        <span class="nav-text">Login</span>
-                    </a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg nav" id="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html"><img src="/assets/images/Logo1.PNG" alt="Logo"></a>
+            </div>
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon pe-5 fw-bold">menu</span>
+            </button>
+            <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                <ul class="m-auto">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="products.html">Special</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+                <div class="cart float-end">
+                    <ul class="d-flex">
+                        <li>
+                            <a href="cart.html" class="icons-link">
+                                <span class="nav-icon">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="quantity js-cart-quantity">0</span>
+                                </span>
+                                <span class="nav-text">Cart</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="icons-link">
+                                <span class="nav-icon"><i class="fa-solid fa-phone"></i></span>
+                                <span class="nav-text">Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icons-link" data-bs-toggle="modal" data-bs-target="#enroll">
+                                <span class="nav-icon"><i class="fa-solid fa-user"></i></span>
+                                <span class="nav-text">Login</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
     <header class="showcase" id="showcase">
